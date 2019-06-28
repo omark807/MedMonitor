@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB03FC0922C4362000CD0492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03FC0822C4362000CD0492 /* AppDelegate.swift */; };
+		FB03FC0B22C4362000CD0492 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03FC0A22C4362000CD0492 /* ViewController.swift */; };
+		FB03FC0E22C4362000CD0492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03FC0C22C4362000CD0492 /* Main.storyboard */; };
+		FB03FC1022C4362200CD0492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB03FC0F22C4362200CD0492 /* Assets.xcassets */; };
+		FB03FC1322C4362200CD0492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03FC1122C4362200CD0492 /* LaunchScreen.storyboard */; };
+		FB03FC1E22C4362200CD0492 /* MedMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03FC1D22C4362200CD0492 /* MedMonitorTests.swift */; };
+		FB03FC2922C4362200CD0492 /* MedMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03FC2822C4362200CD0492 /* MedMonitorUITests.swift */; };
+		FB03FC2E22C4362200CD0492 /* MedMonitor WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FB03FC2D22C4362200CD0492 /* MedMonitor WatchKit App.app */; };
+		FB03FC3422C4362200CD0492 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03FC3222C4362200CD0492 /* Interface.storyboard */; };
+		FB03FC3622C4362300CD0492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB03FC3522C4362300CD0492 /* Assets.xcassets */; };
+		FB03FC3D22C4362300CD0492 /* MedMonitor WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB03FC3C22C4362300CD0492 /* MedMonitor WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB03FC4222C4362300CD0492 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03FC4122C4362300CD0492 /* InterfaceController.swift */; };
+		FB03FC4422C4362300CD0492 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03FC4322C4362300CD0492 /* ExtensionDelegate.swift */; };
+		FB03FC4622C4362300CD0492 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03FC4522C4362300CD0492 /* NotificationController.swift */; };
+		FB03FC4822C4362300CD0492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB03FC4722C4362300CD0492 /* Assets.xcassets */; };
+		FB03FC6322C48E7000CD0492 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB03FC6222C48E7000CD0492 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB03FC1A22C4362200CD0492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB03FBFD22C4362000CD0492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB03FC0422C4362000CD0492;
+			remoteInfo = MedMonitor;
+		};
+		FB03FC2522C4362200CD0492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB03FBFD22C4362000CD0492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB03FC0422C4362000CD0492;
+			remoteInfo = MedMonitor;
+		};
+		FB03FC2F22C4362200CD0492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB03FBFD22C4362000CD0492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB03FC2C22C4362200CD0492;
+			remoteInfo = "MedMonitor WatchKit App";
+		};
+		FB03FC3E22C4362300CD0492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB03FBFD22C4362000CD0492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB03FC3B22C4362300CD0492;
+			remoteInfo = "MedMonitor WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB03FC5022C4362300CD0492 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB03FC3D22C4362300CD0492 /* MedMonitor WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC5422C4362300CD0492 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FB03FC2E22C4362200CD0492 /* MedMonitor WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB03FC0522C4362000CD0492 /* MedMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB03FC0822C4362000CD0492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB03FC0A22C4362000CD0492 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB03FC0D22C4362000CD0492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB03FC0F22C4362200CD0492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB03FC1222C4362200CD0492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB03FC1422C4362200CD0492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB03FC1922C4362200CD0492 /* MedMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB03FC1D22C4362200CD0492 /* MedMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedMonitorTests.swift; sourceTree = "<group>"; };
+		FB03FC1F22C4362200CD0492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB03FC2422C4362200CD0492 /* MedMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB03FC2822C4362200CD0492 /* MedMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedMonitorUITests.swift; sourceTree = "<group>"; };
+		FB03FC2A22C4362200CD0492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB03FC2D22C4362200CD0492 /* MedMonitor WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MedMonitor WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB03FC3322C4362200CD0492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FB03FC3522C4362300CD0492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB03FC3722C4362300CD0492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB03FC3C22C4362300CD0492 /* MedMonitor WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MedMonitor WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB03FC4122C4362300CD0492 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FB03FC4322C4362300CD0492 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FB03FC4522C4362300CD0492 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FB03FC4722C4362300CD0492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB03FC4922C4362300CD0492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB03FC4A22C4362300CD0492 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FB03FC6122C48E0300CD0492 /* MedMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedMonitor.entitlements; sourceTree = "<group>"; };
+		FB03FC6222C48E7000CD0492 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB03FC0222C4362000CD0492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB03FC6322C48E7000CD0492 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC1622C4362200CD0492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC2122C4362200CD0492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC3922C4362300CD0492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB03FBFC22C4362000CD0492 = {
+			isa = PBXGroup;
+			children = (
+				FB03FC0722C4362000CD0492 /* MedMonitor */,
+				FB03FC1C22C4362200CD0492 /* MedMonitorTests */,
+				FB03FC2722C4362200CD0492 /* MedMonitorUITests */,
+				FB03FC3122C4362200CD0492 /* MedMonitor WatchKit App */,
+				FB03FC4022C4362300CD0492 /* MedMonitor WatchKit Extension */,
+				FB03FC0622C4362000CD0492 /* Products */,
+				FB03FC5E22C48E0300CD0492 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB03FC0622C4362000CD0492 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB03FC0522C4362000CD0492 /* MedMonitor.app */,
+				FB03FC1922C4362200CD0492 /* MedMonitorTests.xctest */,
+				FB03FC2422C4362200CD0492 /* MedMonitorUITests.xctest */,
+				FB03FC2D22C4362200CD0492 /* MedMonitor WatchKit App.app */,
+				FB03FC3C22C4362300CD0492 /* MedMonitor WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB03FC0722C4362000CD0492 /* MedMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				FB03FC6122C48E0300CD0492 /* MedMonitor.entitlements */,
+				FB03FC0822C4362000CD0492 /* AppDelegate.swift */,
+				FB03FC0A22C4362000CD0492 /* ViewController.swift */,
+				FB03FC0C22C4362000CD0492 /* Main.storyboard */,
+				FB03FC0F22C4362200CD0492 /* Assets.xcassets */,
+				FB03FC1122C4362200CD0492 /* LaunchScreen.storyboard */,
+				FB03FC1422C4362200CD0492 /* Info.plist */,
+			);
+			path = MedMonitor;
+			sourceTree = "<group>";
+		};
+		FB03FC1C22C4362200CD0492 /* MedMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB03FC1D22C4362200CD0492 /* MedMonitorTests.swift */,
+				FB03FC1F22C4362200CD0492 /* Info.plist */,
+			);
+			path = MedMonitorTests;
+			sourceTree = "<group>";
+		};
+		FB03FC2722C4362200CD0492 /* MedMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB03FC2822C4362200CD0492 /* MedMonitorUITests.swift */,
+				FB03FC2A22C4362200CD0492 /* Info.plist */,
+			);
+			path = MedMonitorUITests;
+			sourceTree = "<group>";
+		};
+		FB03FC3122C4362200CD0492 /* MedMonitor WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FB03FC3222C4362200CD0492 /* Interface.storyboard */,
+				FB03FC3522C4362300CD0492 /* Assets.xcassets */,
+				FB03FC3722C4362300CD0492 /* Info.plist */,
+			);
+			path = "MedMonitor WatchKit App";
+			sourceTree = "<group>";
+		};
+		FB03FC4022C4362300CD0492 /* MedMonitor WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB03FC4122C4362300CD0492 /* InterfaceController.swift */,
+				FB03FC4322C4362300CD0492 /* ExtensionDelegate.swift */,
+				FB03FC4522C4362300CD0492 /* NotificationController.swift */,
+				FB03FC4722C4362300CD0492 /* Assets.xcassets */,
+				FB03FC4922C4362300CD0492 /* Info.plist */,
+				FB03FC4A22C4362300CD0492 /* PushNotificationPayload.apns */,
+			);
+			path = "MedMonitor WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FB03FC5E22C48E0300CD0492 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB03FC6222C48E7000CD0492 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB03FC0422C4362000CD0492 /* MedMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB03FC5522C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitor" */;
+			buildPhases = (
+				FB03FC0122C4362000CD0492 /* Sources */,
+				FB03FC0222C4362000CD0492 /* Frameworks */,
+				FB03FC0322C4362000CD0492 /* Resources */,
+				FB03FC5422C4362300CD0492 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB03FC3022C4362200CD0492 /* PBXTargetDependency */,
+			);
+			name = MedMonitor;
+			productName = MedMonitor;
+			productReference = FB03FC0522C4362000CD0492 /* MedMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB03FC1822C4362200CD0492 /* MedMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB03FC5822C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitorTests" */;
+			buildPhases = (
+				FB03FC1522C4362200CD0492 /* Sources */,
+				FB03FC1622C4362200CD0492 /* Frameworks */,
+				FB03FC1722C4362200CD0492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB03FC1B22C4362200CD0492 /* PBXTargetDependency */,
+			);
+			name = MedMonitorTests;
+			productName = MedMonitorTests;
+			productReference = FB03FC1922C4362200CD0492 /* MedMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB03FC2322C4362200CD0492 /* MedMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB03FC5B22C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitorUITests" */;
+			buildPhases = (
+				FB03FC2022C4362200CD0492 /* Sources */,
+				FB03FC2122C4362200CD0492 /* Frameworks */,
+				FB03FC2222C4362200CD0492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB03FC2622C4362200CD0492 /* PBXTargetDependency */,
+			);
+			name = MedMonitorUITests;
+			productName = MedMonitorUITests;
+			productReference = FB03FC2422C4362200CD0492 /* MedMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FB03FC2C22C4362200CD0492 /* MedMonitor WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB03FC5122C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitor WatchKit App" */;
+			buildPhases = (
+				FB03FC2B22C4362200CD0492 /* Resources */,
+				FB03FC5022C4362300CD0492 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB03FC3F22C4362300CD0492 /* PBXTargetDependency */,
+			);
+			name = "MedMonitor WatchKit App";
+			productName = "MedMonitor WatchKit App";
+			productReference = FB03FC2D22C4362200CD0492 /* MedMonitor WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FB03FC3B22C4362300CD0492 /* MedMonitor WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB03FC4D22C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitor WatchKit Extension" */;
+			buildPhases = (
+				FB03FC3822C4362300CD0492 /* Sources */,
+				FB03FC3922C4362300CD0492 /* Frameworks */,
+				FB03FC3A22C4362300CD0492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MedMonitor WatchKit Extension";
+			productName = "MedMonitor WatchKit Extension";
+			productReference = FB03FC3C22C4362300CD0492 /* MedMonitor WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB03FBFD22C4362000CD0492 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Omar Khan";
+				TargetAttributes = {
+					FB03FC0422C4362000CD0492 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					FB03FC1822C4362200CD0492 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FB03FC0422C4362000CD0492;
+					};
+					FB03FC2322C4362200CD0492 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FB03FC0422C4362000CD0492;
+					};
+					FB03FC2C22C4362200CD0492 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FB03FC3B22C4362300CD0492 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FB03FC0022C4362000CD0492 /* Build configuration list for PBXProject "MedMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB03FBFC22C4362000CD0492;
+			productRefGroup = FB03FC0622C4362000CD0492 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB03FC0422C4362000CD0492 /* MedMonitor */,
+				FB03FC1822C4362200CD0492 /* MedMonitorTests */,
+				FB03FC2322C4362200CD0492 /* MedMonitorUITests */,
+				FB03FC2C22C4362200CD0492 /* MedMonitor WatchKit App */,
+				FB03FC3B22C4362300CD0492 /* MedMonitor WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB03FC0322C4362000CD0492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB03FC1322C4362200CD0492 /* LaunchScreen.storyboard in Resources */,
+				FB03FC1022C4362200CD0492 /* Assets.xcassets in Resources */,
+				FB03FC0E22C4362000CD0492 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC1722C4362200CD0492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC2222C4362200CD0492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC2B22C4362200CD0492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB03FC3622C4362300CD0492 /* Assets.xcassets in Resources */,
+				FB03FC3422C4362200CD0492 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC3A22C4362300CD0492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB03FC4822C4362300CD0492 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB03FC0122C4362000CD0492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB03FC0B22C4362000CD0492 /* ViewController.swift in Sources */,
+				FB03FC0922C4362000CD0492 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC1522C4362200CD0492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB03FC1E22C4362200CD0492 /* MedMonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC2022C4362200CD0492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB03FC2922C4362200CD0492 /* MedMonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03FC3822C4362300CD0492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB03FC4622C4362300CD0492 /* NotificationController.swift in Sources */,
+				FB03FC4422C4362300CD0492 /* ExtensionDelegate.swift in Sources */,
+				FB03FC4222C4362300CD0492 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB03FC1B22C4362200CD0492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB03FC0422C4362000CD0492 /* MedMonitor */;
+			targetProxy = FB03FC1A22C4362200CD0492 /* PBXContainerItemProxy */;
+		};
+		FB03FC2622C4362200CD0492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB03FC0422C4362000CD0492 /* MedMonitor */;
+			targetProxy = FB03FC2522C4362200CD0492 /* PBXContainerItemProxy */;
+		};
+		FB03FC3022C4362200CD0492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB03FC2C22C4362200CD0492 /* MedMonitor WatchKit App */;
+			targetProxy = FB03FC2F22C4362200CD0492 /* PBXContainerItemProxy */;
+		};
+		FB03FC3F22C4362300CD0492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB03FC3B22C4362300CD0492 /* MedMonitor WatchKit Extension */;
+			targetProxy = FB03FC3E22C4362300CD0492 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB03FC0C22C4362000CD0492 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB03FC0D22C4362000CD0492 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB03FC1122C4362200CD0492 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB03FC1222C4362200CD0492 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB03FC3222C4362200CD0492 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB03FC3322C4362200CD0492 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB03FC4B22C4362300CD0492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB03FC4C22C4362300CD0492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB03FC4E22C4362300CD0492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				INFOPLIST_FILE = "MedMonitor WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitor.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FB03FC4F22C4362300CD0492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				INFOPLIST_FILE = "MedMonitor WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitor.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		FB03FC5222C4362300CD0492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				IBSC_MODULE = MedMonitor_WatchKit_Extension;
+				INFOPLIST_FILE = "MedMonitor WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FB03FC5322C4362300CD0492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				IBSC_MODULE = MedMonitor_WatchKit_Extension;
+				INFOPLIST_FILE = "MedMonitor WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		FB03FC5622C4362300CD0492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MedMonitor/MedMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				INFOPLIST_FILE = MedMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB03FC5722C4362300CD0492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MedMonitor/MedMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				INFOPLIST_FILE = MedMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB03FC5922C4362300CD0492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				INFOPLIST_FILE = MedMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedMonitor.app/MedMonitor";
+			};
+			name = Debug;
+		};
+		FB03FC5A22C4362300CD0492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				INFOPLIST_FILE = MedMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedMonitor.app/MedMonitor";
+			};
+			name = Release;
+		};
+		FB03FC5C22C4362300CD0492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				INFOPLIST_FILE = MedMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MedMonitor;
+			};
+			name = Debug;
+		};
+		FB03FC5D22C4362300CD0492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74GRPBP4FZ;
+				INFOPLIST_FILE = MedMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.devp.MedMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MedMonitor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB03FC0022C4362000CD0492 /* Build configuration list for PBXProject "MedMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB03FC4B22C4362300CD0492 /* Debug */,
+				FB03FC4C22C4362300CD0492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB03FC4D22C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitor WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB03FC4E22C4362300CD0492 /* Debug */,
+				FB03FC4F22C4362300CD0492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB03FC5122C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitor WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB03FC5222C4362300CD0492 /* Debug */,
+				FB03FC5322C4362300CD0492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB03FC5522C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB03FC5622C4362300CD0492 /* Debug */,
+				FB03FC5722C4362300CD0492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB03FC5822C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB03FC5922C4362300CD0492 /* Debug */,
+				FB03FC5A22C4362300CD0492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB03FC5B22C4362300CD0492 /* Build configuration list for PBXNativeTarget "MedMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB03FC5C22C4362300CD0492 /* Debug */,
+				FB03FC5D22C4362300CD0492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB03FBFD22C4362000CD0492 /* Project object */;
+}
